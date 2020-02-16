@@ -1,13 +1,15 @@
 // ==UserScript==
 // @name         sispasori
 // @namespace    https://stiq.github.io/
-// @version      0.1
+// @version      0.1.1
 // @description  when you touch ic card with pasori, it fixes display information.
 // @author       stiq
 // @match        https://attendance.moneyforward.com/time_recorder_mode/*
 // @grant        none
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js
 // @include      https://use.fontawesome.com/releases/v5.12.1/css/all.css
+// @downloadURL    https://stiq.github.io/userscripts/sispasori.js
+// @updateURL    https://stiq.github.io/userscripts/sispasori.js
 // ==/UserScript==
 
 (function() {
@@ -19,7 +21,7 @@
       console.log("hide");
       $('.is-warning').delay(3000).fadeOut("slow");
     }
-    alert('Attributes changed!');
+    // alert('Attributes changed!');
   });
   var targetOneBrother = document.querySelector('.attendance-main-contents-inner');
   var target = targetOneBrother.previousElementSibling;
