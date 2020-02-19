@@ -1,12 +1,12 @@
 .attendance-card-time-stamp-list a.selected-event {
-  background: #e7f1fd;
+  background: #e7f1fd !important;
 }
 .page-buttons {
    position: fixed;
    right: 18px;
    width: 2.5em;
 
-   background-color: #2525aa;
+   background-color: #3b7ff3;
    opacity: 0.75;
    border-radius: 24px;
    text-align: center;
@@ -15,10 +15,10 @@
    margin: 0px;
    padding: 10px;
 }
-.page-buttons i {
+.page-buttons {
    color: white;
 }
-.page-buttons:hover i {
+.page-buttons:hover {
    color: yellow;
 }
 #page-reload-button {
