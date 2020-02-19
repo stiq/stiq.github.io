@@ -13,7 +13,7 @@
    font-size: 120%;
    font-weight: bold;
    margin: 0px;
-   padding: 10px;
+   padding: 6px 10px;
 }
 .page-buttons {
    color: white;
@@ -22,10 +22,10 @@
    color: yellow;
 }
 #page-reload-button {
-     bottom: 17%;
+     bottom: 19%;
 }
 #page-page-up-button {
-     bottom: 10%;
+     bottom: 11%;
 }
 #page-page-down-button {
      bottom: 3%;
