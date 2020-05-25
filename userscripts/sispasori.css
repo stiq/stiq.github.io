@@ -3,6 +3,7 @@
 }
 .page-buttons {
    position: fixed;
+   border: none;
    right: 18px;
    width: 2.5em;
 
