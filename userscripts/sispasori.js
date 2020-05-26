@@ -31,6 +31,28 @@
     characterData: true
   });
 
+  // 時刻表示を監視して、打刻種類を指定時間で自動切り替え
+  var observerTimeRecoder = new MutationObserver(function(mutations) {
+    // 現在の時刻
+    var nowRecoderTime = $('.attendance-card-time-recorder-time').text();
+    // 退勤をクリック
+    var clockOutTimes = ['16:00:00', '17:00:00', '18:00:00'];
+    if(clockOutTimes.indexOf(nowRecoderTime)>=0){
+      $('a[data-event_name="clock_out"]')[0].click();
+    }
+    // 出勤をクリック
+    var clockInTimes = ['6:00:00', '9:00:00', '10:00:00'];
+    if(clockInTimes.indexOf(nowRecoderTime)>=0){
+      $('a[data-event_name="clock_in"]')[0].click();
+    }
+  });
+  var targetTimeRecoder = document.querySelector('.attendance-card-time-recorder-time');
+  observerTimeRecoder.observe(targetTimeRecoder, {
+    attributes: false,
+    childList: true,
+    characterData: false,
+  });
+
   // 休憩打刻を非表示
   $('a[data-event_name="start_break"]').hide();
   $('a[data-event_name="end_break"]').hide();
