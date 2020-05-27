@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         sispasori
 // @namespace    https://stiq.github.io/
-// @version      0.1.2
+// @version      0.1.3
 // @description  when you touch ic card with pasori, it fixes display information.
 // @author       stiq
 // @match        https://attendance.moneyforward.com/time_recorder_mode/*
